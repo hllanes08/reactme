@@ -1,25 +1,8 @@
-# README
+Ruby on Rails site for demo react custom components created
+-Menus
+-Dropdowns
+-Table
+-Handle events
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hosted in heroku=https://reactmejs.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# reactme

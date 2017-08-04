@@ -1,8 +1,10 @@
-Ruby on Rails site for demo react custom components created
--Menus
--Dropdowns
--Table
--Handle events
+#Reactme
 
-Hosted in heroku=https://reactmejs.herokuapp.com/
+##Ruby on Rails site for demo react custom components and events
+* Menus
+* Dropdowns
+* Table
+* Handle events
+
+
 

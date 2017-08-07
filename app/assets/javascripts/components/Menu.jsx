@@ -2,9 +2,14 @@ class Menu extends React.Component{
   constructor(props){
     super(props);
     this.state = {
+      menus: this.props.menus
     };
-  }
+  } 
+
   render(){
+    var menus_items = this.state.menus.map((menu, index) =>
+      <li  key={index}><a href={menu.path}>{menu.key}</a></li>
+    )
     return(
       <div>
         <nav className="navbar navbar-default">
@@ -20,14 +25,11 @@ class Menu extends React.Component{
               </div>
             <div className="collapse navbar-collapse" id="react_navbar"> 
               <ul className="nav navbar-nav">
-                <li className="active"><a>Home</a></li>
-                <li><a>Menu 1</a></li>
-                <li><a>Menu 2</a></li>
-                <li><a>Menu 3</a></li>
+                { menus_items } 
               </ul>
             </div>
           </div>
-        </nav> 
+        </nav>
       </div>
     );
   }

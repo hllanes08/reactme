@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def inputs
   end
+
+  def table
+  end
 end

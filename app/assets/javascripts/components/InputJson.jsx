@@ -5,8 +5,7 @@ class InputJson extends React.Component{
       jsonResult: JSON.stringify(this.props.menus),
       jsonParse: 'El formato de json esta correcto',
       jsonClass: 'alert alert-success'
-    }
-    console.log(this);
+    } 
     this.updateMenus = this.updateMenus.bind(this);
   }
 

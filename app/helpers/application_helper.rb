@@ -21,7 +21,7 @@ module ApplicationHelper
     items = []
     for i in 0..20
        items << [
-         { value: "#{i + 1}", value: 'label' },
+         { value: "#{i + 1}", type: 'label' },
          { value: Faker::Name.first_name, type: 'label' },
          { value: Faker::Name.last_name , type: 'label' },
          { value: Faker::Internet.email, type: 'label' }

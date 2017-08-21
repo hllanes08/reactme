@@ -4,7 +4,7 @@ module ApplicationHelper
     [
      { key: 'Home', path: '/' },
      { key: 'Inputs', path: '/inputs' },
-     { key: 'Table', path: '/table' }
+     { key: 'Menus', path: '/menus' }
     ]
   end
 

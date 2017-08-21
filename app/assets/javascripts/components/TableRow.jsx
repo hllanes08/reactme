@@ -19,11 +19,11 @@ class TableRow extends React.Component{
      })
   }
 
-  render(){
-    //let tds =  this.state.item.map((attr, index) =>
-    //  <td key={index}><p>{attr.value}</p></td>
-   // )
+  componentWillReceiveProps(nextProps){
+    this.setState({ item: nextProps.item}) 
+  }
 
+  render(){
     return( 
         <tr>
         { this.itemsAttr() }

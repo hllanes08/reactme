@@ -5,6 +5,6 @@ class HomeController < ApplicationController
   def inputs
   end
 
-  def table
+  def menus
   end
 end

@@ -4,7 +4,7 @@ class MessagesChannel < ApplicationCable::Channel
   end
 
   def unsubscribed
-    # Any cleanup needed when channel is unsubscribed
+    stream_from 'messages_channel' 
   end
 
   def speak

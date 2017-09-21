@@ -1,0 +1,2 @@
+class Commentable < ApplicationRecord
+end

@@ -7,4 +7,11 @@ class HomeController < ApplicationController
 
   def menus
   end
+
+  def messages
+  end
+
+  def comments
+    @commentable = Commentable.first
+  end
 end

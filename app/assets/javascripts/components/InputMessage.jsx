@@ -8,10 +8,11 @@ class InputMessage extends React.Component{
   render(){
     return(
       <div>
-       <div class="container-fluid">
-         <div class="form-group">
-         </div>
-        </div>
+         <div className="col-md-12">
+           <div className="form-group">
+             <textarea className="form-control" placeholder="Write a message" rows="5" onChange={this.onTextChange}></textarea>
+           </div>
+          </div>
       </div>
     );
   }

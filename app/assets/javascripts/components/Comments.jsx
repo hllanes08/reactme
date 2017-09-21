@@ -10,6 +10,7 @@ class Comments extends React.Component{
     return(
       <div>
         <div className="container">
+          <div className="row">
           <div className="media">
             <div className="media-left">
 	      <img src={this.state.object.avatar} className="media-object"/>
@@ -19,6 +20,11 @@ class Comments extends React.Component{
     	     <p>Lorem ipsum...</p>
            </div>
           </div>
+        </div>
+        <br/>
+        <div className="row">
+          <InputMessage />
+        </div>
         </div>
       </div>
     );

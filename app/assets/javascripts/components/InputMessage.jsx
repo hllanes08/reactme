@@ -3,7 +3,11 @@ class InputMessage extends React.Component{
     super(props);
     this.state = {
     }
+    this.onTextChange = this.onTextChange.bind(this);
   }
+  onTextChange(event){
+  }
+  
 
   render(){
     return(

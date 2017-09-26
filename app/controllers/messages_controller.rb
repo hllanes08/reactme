@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
 
-  def create
-    Message.create(params)
+  def create 
+    render json: { message: Message.create(message_params) }, status: :ok
   end
 
   private

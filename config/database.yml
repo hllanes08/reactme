@@ -23,4 +23,5 @@ test:
 
 production:
   <<: *default
-  database: reactme_production
+  database: ENV['DATABASE']
+  password: ENV['PASSWORD']

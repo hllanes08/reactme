@@ -27,7 +27,7 @@ class InputMessage extends React.Component{
         method: 'POST',
         url: '/messages',
         data: { message: { text: e.target.value }},
-        dataType: "html",
+        dataType: "json",
         success: onSuccess, 
         error: onError
       });
@@ -39,7 +39,7 @@ class InputMessage extends React.Component{
       <div>
          <div className="col-md-12">
            <div className="form-group">
-             <textarea className="form-control" placeholder="Write a message" rows="5" onChange={this.onTextChange} onKeyDown={this.keyPress}></textarea>
+             <textarea className="form-control" placeholder="Write a message and press enter/Escibre un texto y presiona enter" rows="5" onChange={this.onTextChange} onKeyDown={this.keyPress}></textarea>
            </div>
           </div>
       </div>

@@ -13,5 +13,6 @@ class HomeController < ApplicationController
 
   def comments
     @commentable = Commentable.first
+    @messages = Message.all
   end
 end

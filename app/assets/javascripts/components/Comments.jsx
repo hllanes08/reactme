@@ -2,8 +2,20 @@ class Comments extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      object: this.props.object
+      object: this.props.object,
+      messages: this.props.messages
     }
+  }
+
+  messagesItems(){
+    return this.state.messages.map((message, index) => {
+      return <div key={index} className="alert alert-success" role="alert">
+        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{message.text}</strong>
+        </div>;
+    })
   }
 
   render(){
@@ -22,6 +34,9 @@ class Comments extends React.Component{
           </div>
         </div>
         <br/>
+        <div className="row">
+        { this.messagesItems() }
+        </div>
         <div className="row">
           <InputMessage />
         </div>

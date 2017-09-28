@@ -39,7 +39,7 @@ class InputMessage extends React.Component{
       <div>
          <div className="col-md-12">
            <div className="form-group">
-             <textarea className="form-control" placeholder="Write a message and press enter/Escibre un texto y presiona enter" rows="5" onChange={this.onTextChange} onKeyDown={this.keyPress}></textarea>
+             <textarea className="form-control" placeholder="Write a message and press enter/Escribe un texto y presiona enter" rows="5" onChange={this.onTextChange} onKeyDown={this.keyPress}></textarea>
            </div>
           </div>
       </div>

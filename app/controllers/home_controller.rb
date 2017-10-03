@@ -15,4 +15,7 @@ class HomeController < ApplicationController
     @commentable = Commentable.first
     @messages = Message.all
   end
+
+  def maps
+  end
 end

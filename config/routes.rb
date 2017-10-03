@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'menus', to: 'home#menus'
   get 'messages', to: 'home#messages'
   get 'comments', to: 'home#comments'
+  get 'maps', to: 'home#maps'
   get '/messages_list', to: 'messages#index'
   delete '/messages', to: 'messages#destroy'
   resources :messages
